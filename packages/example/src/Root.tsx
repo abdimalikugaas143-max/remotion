@@ -1901,6 +1901,16 @@ export const Index: React.FC = () => {
 				fps={30}
 				durationInFrames={2 * 60 * 30}
 			/>
+			<Folder name="order-management">
+				<Composition
+					id="order-management"
+					lazyComponent={() => import('./OrderManagement')}
+					width={1920}
+					height={1080}
+					fps={30}
+					durationInFrames={1215}
+				/>
+			</Folder>
 		</>
 	);
 };
